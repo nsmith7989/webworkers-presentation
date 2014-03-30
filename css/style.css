@@ -1,0 +1,695 @@
+.visuallyhidden {
+  font-size: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden; }
+
+@font-face {
+  font-family: OpenSans-Regular-webfont;
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix'), url('../fonts/OpenSans-Regular-webfont.woff'), url('../fonts/OpenSans-Regular-webfont.ttf'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular-webfont'); }
+
+.OpenSans-Regular-webfont {
+  font-family: 'OpenSans-Regular-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-bla-webfont;
+  src: url('../fonts/lato-bla-webfont.eot');
+  src: url('../fonts/lato-bla-webfont.eot?#iefix'), url('../fonts/lato-bla-webfont.woff'), url('../fonts/lato-bla-webfont.ttf'), url('../fonts/lato-bla-webfont.svg#lato-bla-webfont'); }
+
+.lato-bla-webfont {
+  font-family: 'lato-bla-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-blaita-webfont;
+  src: url('../fonts/lato-blaita-webfont.eot');
+  src: url('../fonts/lato-blaita-webfont.eot?#iefix'), url('../fonts/lato-blaita-webfont.woff'), url('../fonts/lato-blaita-webfont.ttf'), url('../fonts/lato-blaita-webfont.svg#lato-blaita-webfont'); }
+
+.lato-blaita-webfont {
+  font-family: 'lato-blaita-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-bol-webfont;
+  src: url('../fonts/lato-bol-webfont.eot');
+  src: url('../fonts/lato-bol-webfont.eot?#iefix'), url('../fonts/lato-bol-webfont.woff'), url('../fonts/lato-bol-webfont.ttf'), url('../fonts/lato-bol-webfont.svg#lato-bol-webfont'); }
+
+.lato-bol-webfont {
+  font-family: 'lato-bol-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-bolita-webfont;
+  src: url('../fonts/lato-bolita-webfont.eot');
+  src: url('../fonts/lato-bolita-webfont.eot?#iefix'), url('../fonts/lato-bolita-webfont.woff'), url('../fonts/lato-bolita-webfont.ttf'), url('../fonts/lato-bolita-webfont.svg#lato-bolita-webfont'); }
+
+.lato-bolita-webfont, .slide h2, section > header.slide > h1 {
+  font-family: 'lato-bolita-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-hai-webfont;
+  src: url('../fonts/lato-hai-webfont.eot');
+  src: url('../fonts/lato-hai-webfont.eot?#iefix'), url('../fonts/lato-hai-webfont.woff'), url('../fonts/lato-hai-webfont.ttf'), url('../fonts/lato-hai-webfont.svg#lato-hai-webfont'); }
+
+.lato-hai-webfont {
+  font-family: 'lato-hai-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-haiita-webfont;
+  src: url('../fonts/lato-haiita-webfont.eot');
+  src: url('../fonts/lato-haiita-webfont.eot?#iefix'), url('../fonts/lato-haiita-webfont.woff'), url('../fonts/lato-haiita-webfont.ttf'), url('../fonts/lato-haiita-webfont.svg#lato-haiita-webfont'); }
+
+.lato-haiita-webfont {
+  font-family: 'lato-haiita-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-lig-webfont;
+  src: url('../fonts/lato-lig-webfont.eot');
+  src: url('../fonts/lato-lig-webfont.eot?#iefix'), url('../fonts/lato-lig-webfont.woff'), url('../fonts/lato-lig-webfont.ttf'), url('../fonts/lato-lig-webfont.svg#lato-lig-webfont'); }
+
+.lato-lig-webfont, .slide h2, #intro .attribution {
+  font-family: 'lato-lig-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-ligita-webfont;
+  src: url('../fonts/lato-ligita-webfont.eot');
+  src: url('../fonts/lato-ligita-webfont.eot?#iefix'), url('../fonts/lato-ligita-webfont.woff'), url('../fonts/lato-ligita-webfont.ttf'), url('../fonts/lato-ligita-webfont.svg#lato-ligita-webfont'); }
+
+.lato-ligita-webfont {
+  font-family: 'lato-ligita-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-reg-webfont;
+  src: url('../fonts/lato-reg-webfont.eot');
+  src: url('../fonts/lato-reg-webfont.eot?#iefix'), url('../fonts/lato-reg-webfont.woff'), url('../fonts/lato-reg-webfont.ttf'), url('../fonts/lato-reg-webfont.svg#lato-reg-webfont'); }
+
+.lato-reg-webfont {
+  font-family: 'lato-reg-webfont', Arial, sans-serif; }
+
+@font-face {
+  font-family: lato-regita-webfont;
+  src: url('../fonts/lato-regita-webfont.eot');
+  src: url('../fonts/lato-regita-webfont.eot?#iefix'), url('../fonts/lato-regita-webfont.woff'), url('../fonts/lato-regita-webfont.ttf'), url('../fonts/lato-regita-webfont.svg#lato-regita-webfont'); }
+
+.lato-regita-webfont {
+  font-family: 'lato-regita-webfont', Arial, sans-serif; }
+
+/**
+    Basic CSS so that the slideshow script functions as a slideshow
+    @author Lea Verou
+    @version 1.0
+ */
+/**
+ * "Variables"
+ */
+.slide, .delayed, .delayed-children > * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-property: -webkit-transform, opacity, left, top, right, bottom, background;
+  transition-property: transform, opacity, left, top, right, bottom, background; }
+
+/**
+ * Styles
+ */
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0; }
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 250%;
+  line-height: 1.6; }
+
+.slide.previous, .slide:target, .slide.next {
+  display: block;
+  visibility: hidden;
+  overflow: hidden; }
+
+.slide:target {
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible; }
+
+/**
+    Slide numbers
+ */
+#indicator {
+  position: absolute;
+  top: 0.05in;
+  right: 0.5em;
+  z-index: 1010;
+  font-size: 0.15in;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  text-shadow: 0.05em 0.05em 0.1em black;
+  text-align: center;
+  padding: 0.1em 0.3em 0;
+  min-width: 1.6em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 999px; }
+
+/**
+     On-screen navigation
+ */
+#onscreen-nav {
+  z-index: 1010;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1em 1em;
+  font-size: 150%;
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity; }
+
+#onscreen-nav:hover {
+  opacity: 1; }
+
+#onscreen-nav:not(:hover) button {
+  margin-top: -1.5em;
+  pointer-events: none; }
+
+button.onscreen-nav {
+  float: right;
+  padding: 0.2em 0.5em;
+  border: 0;
+  border-radius: 0.3em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -0.05em 0.05em black;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+button.onscreen-nav:hover {
+  background: black; }
+
+button.onscreen-nav.prev {
+  float: left; }
+
+/* If there's nothing selected, show the first */
+.slide:first-child {
+  z-index: 2; }
+
+/* Delayed items that are shown incrementally after the slide is */
+.delayed, .delayed-children > * {
+  opacity: 0; }
+
+.delayed.displayed, .delayed-children > .displayed {
+  opacity: 0.3; }
+
+.delayed.current, .delayed-children > .current, .delayed.displayed.non-dismissable, .delayed-children > .displayed.non-dismissable, .delayed.displayed.persistent, .delayed-children > .displayed.persistent, .delayed-children.persistent > .displayed {
+  opacity: 1; }
+
+/**
+    iframe slides
+ */
+.iframe.slide {
+  padding: 0 !important;
+  background: white;
+  text-align: center; }
+
+.iframe.slide > h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 100%; }
+
+.iframe.slide > h1 > a {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -0.05em 0.05em black; }
+
+.slide > iframe:only-of-type, iframe.csss-import {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+
+iframe.csss-import:not(.show) {
+  z-index: -1;
+  visibility: hidden; }
+
+iframe.csss-import.show {
+  visibility: visible;
+  z-index: 101; }
+
+/**
+    Show thumbnails
+ */
+.show-thumbnails {
+  overflow-x: hidden; }
+
+.show-thumbnails .slide, .presenter .slide.next {
+  width: 1024px;
+  height: 768px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  position: static;
+  opacity: 1;
+  margin: -292px -395px;
+  cursor: pointer;
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s transform; }
+
+.show-thumbnails.headers-only .slide {
+  display: none; }
+
+.show-thumbnails.headers-only header.slide {
+  display: block; }
+
+.show-thumbnails .slide .delayed, .presenter .slide:target + .slide .delayed {
+  opacity: 1; }
+
+.show-thumbnails .slide:hover, .show-thumbnails .slide:target, .presenter .slide:target + .slide {
+  outline: 20px solid rgba(255, 255, 255, 0.6);
+  outline-radius: 5px;
+  box-shadow: 5px 5px 10px black; }
+
+.show-thumbnails .slide:target {
+  outline-color: rgba(255, 255, 255, 0.3); }
+
+.show-thumbnails .slide:target:hover {
+  outline-color: rgba(255, 255, 255, 0.9); }
+
+/* Display titles */
+.show-thumbnails .slide[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.1em 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 250%;
+  text-align: center;
+  text-shadow: 0.05em 0.05em 0.1em black;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
+
+/* Hide all elements in slide by hitting Ctrl + J or Shift + J */
+.hide-elements .slide:target > * {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+/* Timer */
+#timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  width: 0%;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 5px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-align: right;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: linear;
+  transition: linear; }
+
+#timer:before {
+  content: 'Progress ';
+  text-transform: uppercase;
+  color: white;
+  font-size: 9px; }
+
+#timer.end {
+  width: 100%; }
+
+#timer.end.overtime {
+  width: 0%;
+  left: auto;
+  right: 0; }
+
+/* Presenter & projector views */
+.projector #timer {
+  display: none; }
+
+.presenter-notes {
+  display: none;
+  position: fixed;
+  right: 230px;
+  bottom: 0;
+  left: 0;
+  max-height: 6em;
+  overflow: auto;
+  padding: 0.6em 1em;
+  font-size: 60%;
+  line-height: 1.3;
+  font-weight: normal;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  text-shadow: 0 1px white;
+  box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.5) inset; }
+
+.presenter .slide.next {
+  position: fixed;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  z-index: 100; }
+
+.presenter .slide:target > .presenter-notes {
+  display: block; }
+
+/**
+    CSSS basic slideshow theme
+
+    @author Lea Verou
+    @version 1.0
+*/
+/**
+ * Variables
+ */
+.slide {
+  background-clip: none; }
+
+.slide:target {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .slide:target > p, .slide:target > img {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+.slide.no-flex:target {
+  display: block; }
+
+
+/**
+ * Styles
+ */
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit; }
+
+html {
+  background-size: cover; }
+
+body {
+  font-family: sans-serif; }
+
+button {
+  padding: 0.2em 0.5em; }
+
+a:hover {
+  text-shadow: 0 0 0.5em white, 0 0 1em white; }
+
+select {
+  color: black; }
+
+code, pre, style, textarea, input {
+  font-family: Consolas, 'Andale Mono', 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.4); }
+
+code {
+  font-family: Monaco;
+  padding: 0.1em;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  border: 3px solid #e48632;
+  background: #fff;
+  color: #6f5a40;
+  text-shadow: none;
+  margin: 10px 0; }
+
+pre, style, textarea {
+  padding: 0.3em 0.5em;
+  margin-left: -0.1em;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0.1em 0.1em 0.5em black inset; }
+
+pre > code {
+  padding: 0;
+  white-space: pre;
+  border: 0;
+  background: 0;
+  box-shadow: none; }
+
+textarea {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+strong, b {
+  font-weight: bold; }
+
+pre strong {
+  text-shadow: 0 0 0.6em white; }
+
+.slide {
+  padding: 0 2.5% 2%;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 30px solid transparent; }
+
+section > header.slide > h1 {
+  text-shadow: 0.05em 0.05em 0.1em rgba(111, 90, 64, 0.4);
+  font-family: lato-bla-webfont;
+  text-transform: uppercase; }
+  section > header.slide > h1 + .subtitle {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    font-size: 100%;
+    line-height: 1;
+    text-align: center;
+    text-shadow: none;
+    color: #6f5a40; }
+
+#indicator {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+  text-shadow: 0.03em 0.03em 0.1em white; }
+
+.slide h2 {
+  font-weight: 100;
+  font-size: 0.75in; }
+
+.slide p, .slide li {
+  font-weight: bold;
+  letter-spacing: -0.03em; }
+
+.slide > ul {
+  list-style: none; }
+
+.slide ol {
+  margin-left: 2em; }
+
+.slide > ul ul {
+  margin-left: 2em;
+  list-style: none; }
+
+.slide li li {
+  font-size: 80%; }
+
+.slide li {
+  margin: 0.2em 0; }
+
+.slide > ul > li:before {
+  content: '\2714';
+  color: #a0c12c;
+  padding-right: 0.2em; }
+
+.slide li li:before {
+  content: '\279C';
+  color: #28bcbc;
+  padding-right: 0.2em; }
+
+section > header.slide {
+  background-color: #e48632; }
+
+section > header.slide > h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -0.6em;
+  font-size: 400%;
+  line-height: 1;
+  text-align: center; }
+
+.slide .emphasis {
+  padding: 0.4em 0.5em 0.3em;
+  margin: 0.3em 0;
+  background: #f80;
+  background: -webkit-linear-gradient(#fa0, #f80);
+  background: linear-gradient(#fa0, #f80);
+  color: white;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+  text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.4);
+  border-radius: 0.3em;
+  box-shadow: 0.1em 0.1em 0.5em black; }
+
+.light.slide .emphasis {
+  box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.4); }
+
+.slide .emphasis::before {
+  content: '\279C';
+  color: rgba(255, 255, 255, 0.5);
+  float: left;
+  width: 0.75em;
+  height: 0;
+  padding: 0.45em 0 0.3em;
+  margin: -0.2em 0.2em 0 -0.25em;
+  border: 0.12em solid;
+  text-align: center;
+  line-height: 0;
+  font-size: 120%;
+  font-family: inherit;
+  text-shadow: none;
+  border-radius: 999px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.attribution {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1em;
+  padding: 0.5em 1em;
+  font-size: 30%;
+  text-shadow: 0.05em 0.05em 0.1em black; }
+
+.attribution a {
+  text-decoration: none; }
+
+.attribution a::after {
+  content: ' (' attr(href) ')'; }
+
+/* Syntax highlighting */
+.comment {
+  color: #999; }
+
+.string {
+  color: yellow; }
+
+.keyword {
+  font-weight: bold;
+  color: deeppink; }
+
+.number, .boolean {
+  color: #0cf; }
+
+.regex {
+  color: orange; }
+
+p {
+  font-family: lato-reg-webfont, arial, sans-serif; }
+  p em {
+    font-family: lato-blaita-webfont, arial, sans-serif; }
+
+.slide {
+  background: rgba(0, 0, 0, 0.9); }
+  .slide p.dev {
+    color: #aa8e6b;
+    line-height: 1;
+    margin-bottom: 20px; }
+  .slide p.prod {
+    color: #80bd01;
+    line-height: 1;
+    margin-bottom: 40px; }
+  .slide .hyperlink {
+    color: #4d4dff;
+    text-decoration: underline; }
+
+#timer {
+  display: none; }
+
+.delayed.displayed.no-dim {
+  opacity: 1; }
+
+#intro {
+  background: #f5f6f6;
+  padding: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #intro img {
+    display: block;
+    margin: 20px auto; }
+
+#intro h1 {
+  width: 60%;
+  margin: 5% auto 0;
+  color: #6f5a40;
+  text-shadow: none; }
+
+#intro .attribution {
+  font-weight: bold;
+  text-align: center;
+  font-size: 100%;
+  line-height: 1;
+  color: #e48632;
+  text-shadow: none; }
+
+.rf-intro {
+  background: #0075d6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .rf-intro img {
+    display: block;
+    margin: 0 auto 100px; }
+
+#css-controls-demo label {
+  display: block; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* hack to avoid using the Object element in Safari/WebKit, due to WebKit Bug 27190 */
+  object[type="image/svg+xml"] {
+    display: none; } }
+
+/*# sourceMappingURL=undefined */

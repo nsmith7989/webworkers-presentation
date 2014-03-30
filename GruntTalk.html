@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>WebWorkers Grunt presentation</title>
+
+<!-- Don't alter this, CSSS needs it to work -->
+<link href="css/style.css" rel="stylesheet" />
+
+<!-- Take care of prefixes -->
+  <!--<script src="prefixfree.min.js"></script>-->
+
+
+</head>
+<body data-duration="45">
+
+<header id="intro" class="slide">
+  <img src="grunt-logo.svg" alt=""/>
+  <p class="attribution">Why It's Awesome</p>
+</header>
+
+<header class="slide rf-intro">
+  <img class="delayed no-dim" src="img/RF_logo_cmyk.svg" alt=""/>
+  <p>Nathanael Smith</p>
+  <p class="delayed no-dim">Font End / UI Developer at RocketFuel</p>
+  <p class="delayed no-dim">Twitter: @nsmith2</p>
+  <p class="delayed no-dim">GitHub: nsmith7989</p>
+
+</header>
+
+<section>
+	<header class="slide">
+		<h1>Grunt</h1>
+    <span class="subtitle">Why?</span>
+	</header>
+
+	<section class="slide no-flex">
+		<h2>Do these things:</h2>
+		<p class="delayed dev">Work in modular chunks of CSS and JS</p>
+		<p class="delayed prod">But in production everything should be smushed together</p>
+		<p class="delayed dev">Use compelling, high quality images</p>
+		<p class="delayed prod">But in production everything should be as small as possible</p>
+		<p class="delayed dev">Develop quickly and semantically</p>
+		<p class="delayed prod">But make it work in ancient browsers</p>
+	</section>
+
+	<section class="slide no-flex">
+		<h2>Grunt helps</h2>
+		<p class="delayed">Bajillion plugins that alleviate the repetative pain of front end development</p>
+		<ul>
+			<li class="delayed">CSS Preprocessing</li>
+			<li class="delayed">Image Minification</li>
+			<li class="delayed">JS Test Running</li>
+			<li class="delayed">JS concatination</li>
+			<li class="delayed">JS minification</li>
+			<li class="delayed">HandleBars Precompilation</li>
+			<li class="delayed">SFTP Deployment</li>
+			<li class="delayed">JS/CSS Linting</li>
+			<li class="delayed">console.log removal</li>
+			<li class="delayed">SVG to Icon Font Generation</li>
+			<li class="delayed">Browser Syncing / Visual Testing</li>
+		</ul>
+	</section>
+
+	<section class="slide no-flex">
+		<h2>But I already have:</h2>
+		<ul>
+			<li>Codekit</li>
+			<li>LiveReload</li>
+			<li>Compass Watch</li>
+			<li>All the other things...</li>
+		</ul>
+		<p class=delayed>Grunt combines or replaces multiple build tools into extremely powerful workflows</p>
+	</section>
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Grunt</h1>
+		<span class="subtitle">What?</span>
+	</header>
+	
+	<section class="slide no-flex">
+		<h2>Grunt is built on Node.js</h2>
+		<img class="delayed no-dim" src="http://nodejs.org/images/logo.svg" alt="Node Logo">
+		<p class="delayed no-dim" style="text-align: center">nodejs.org</p>
+		<p class="delayed">Javascript Environment that can interact with your local file system</p>
+		<p class="delayed">Anything node can do, Grunt can do.</p>
+		<p class="delayed" style="text-decoration: underline">Grunt is a system for running node scripts.</p>
+	</section>
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Grunt</h1>
+		<span class="subtitle">Installation.</span>
+	</header>
+
+	<section class="slide no-flex">
+		<h2>Install Steps</h2>
+		<ol>
+			<li>Install Node <a target=_blank href="http://nodejs.org"><span class="hyperlink">nodejs.org</span></a></li>
+			<li class=delayed>Install Grunt <code>npm install -g grunt-cli</code></li>
+		</ol>
+	</section>
+
+	<section class="slide no-flex">
+		<h2>Usage Steps</h2>
+		<p class="delayed">Grunt configuration is per project</p>
+		<p class="delayed">Based on two files</p>
+		<ol>
+			<li class="delayed"><code>package.json</code></li>
+			<li class="delayed"><code>Gruntfile.js</code></li>
+		</ol>
+		<p class="delayed">Get these by using a generator e.g. <code>npm install grunt-init -g</code></p>
+		<p class="delayed">or by manually creating them...</p>
+	</section>
+
+	<section class="slide no-flex">
+		<h2><code>package.json</code></h2>
+		<pre lang="javascript">
+{
+  "name": "WebWorkers-Gruntification",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-sass": "~0.12.0",
+    "browser-sync": "^0.7.3"
+  }
+}
+		</pre>
+	</section>
+
+
+		<section class="slide no-flex">
+		<h2><code>Gruntfile.js</code></h2>
+		<pre lang="javascript">
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+
+  uglify: {
+      //tasks options/config here
+    }
+   
+  });
+  //load tasks here
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  //name tasks here
+  grunt.registerTask('default', ['uglify']);
+
+};
+		</pre>
+	</section>
+
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Grunt</h1>
+		<span class="subtitle">Example Workflow.</span>
+	</header>
+</section>
+
+
+<footer class="slide no-flex">
+	<h2>Thank you!</h2>
+	<p>Closing remarks</p>
+</footer>
+
+<script src="slideshow.js"></script>
+
+<!-- Uncomment the plugins you need
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+-->
+<script src="plugins/code-highlight.js"></script>
+
+
+
+
+
+<script>var slideshow = new SlideShow();</script>
+
+
+</body>
+</html>

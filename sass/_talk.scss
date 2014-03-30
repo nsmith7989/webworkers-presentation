@@ -1,0 +1,89 @@
+
+p {
+	font-family: lato-reg-webfont, arial, sans-serif;
+	em {
+		font-family: lato-blaita-webfont, arial, sans-serif;
+	}
+}
+
+.slide {
+	background: rgba(0,0,0, .9);
+
+	p.dev {
+		color: lighten($grunt-brown, 20%);
+		line-height: 1;
+		margin-bottom: 20px;
+
+	}
+	p.prod {
+		color: #80bd01;
+		line-height: 1;
+		margin-bottom: 40px
+	}
+	.hyperlink {
+		color: lighten(blue, 15%);
+		text-decoration: underline;
+	}
+}
+
+#timer {
+	display: none;
+}
+
+.delayed.displayed.no-dim {
+	opacity: 1;
+}
+
+#intro {
+    background: $grunt-background;
+    padding: 0;
+    border: 0;
+	display: flex;
+
+	img	{
+		display: block;
+		margin: 20px auto;
+	}
+
+}
+
+#intro h1 {
+    width: 60%;
+    margin: 5% auto 0;
+	color: $grunt-brown;
+	text-shadow: none;
+}
+
+#intro .attribution {
+	@extend .lato-lig-webfont;
+    font-weight: bold;
+    text-align: center;
+    font-size: 100%;
+    line-height: 1;
+    color: $grunt-orange;
+    text-shadow: none;
+}
+
+.rf-intro {
+	background: $rf-blue;
+	display: flex;
+	img {
+		display: block;
+		margin: 0 auto 100px;
+	}
+}
+
+
+#css-controls-demo label {
+    display: block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:0) {
+/* hack to avoid using the Object element in Safari/WebKit, due to WebKit Bug 27190 */
+    object[type="image/svg+xml"] {
+        display: none;
+    }
+
+    #intro h1 {
+    }
+}
