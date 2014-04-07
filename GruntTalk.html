@@ -18,15 +18,17 @@
 
 <header id="intro" class="slide">
   <img src="grunt-logo.svg" alt=""/>
-  <p class="attribution">Why It's Awesome</p>
+  <p class="attribution">In Your Workflow</p>
 </header>
 
 <header class="slide rf-intro">
-  <img class="delayed no-dim" src="img/RF_logo_cmyk.svg" alt=""/>
+  <img class="no-dim" src="img/RF_logo_cmyk.svg" alt=""/>
   <p>Nathanael Smith</p>
-  <p class="delayed no-dim">Font End / UI Developer at RocketFuel</p>
-  <p class="delayed no-dim">Twitter: @nsmith2</p>
-  <p class="delayed no-dim">GitHub: nsmith7989</p>
+  <p class="no-dim">Font End / UI Developer at RocketFuel</p>
+  <p class="no-dim">Twitter: @nsmith2</p>
+  <p class="no-dim">GitHub: nsmith7989</p>
+  <p class="no-dim">Email: AdoptAllTheThings@gorocketfuel.com</p>
+  <p class="delayed no-dim smaller">nathanael@gorocketfuel.com</p>
 
 </header>
 
@@ -132,6 +134,7 @@
   }
 }
 		</pre>
+		<p class="delayed"><code>npm install grunt-contrib-watch --save-dev</code></p>
 	</section>
 
 
@@ -152,7 +155,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   //name tasks here
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['concat','uglify']);
 
 };
 		</pre>
@@ -165,12 +168,77 @@ module.exports = function(grunt) {
 		<h1>Grunt</h1>
 		<span class="subtitle">Example Workflow.</span>
 	</header>
+	<section class="slide no-flex">
+		<h2>What We're Doing</h2>
+		<p class="delayed">Responsive Wordpress Theme (Zurb Foundation)</p>
+		<h3 class="delayed">What We Want (development)</h3>
+		<ul>
+			<li class="delayed">Sass Compilation (grunt-sass)</li>
+			<li class="delayed">Automatic Browser Prefixing (autoprefixer)</li>
+			<li class="delayed">Font Face Tracking (fontface)</li>
+			<li class="delayed">Live Reloading (browserSync)</li>
+			
+		</ul>
+	</section>
+
+	<section class="slide no-flex">
+		<h2>What We Want (production)</h2>
+		<ul>
+			<li class="delayed">Smallest Files Possible</li>
+			<ul class="sub delayed">
+				<li class="delayed">Minified CSS (grunt-sass)</li>
+				<li class="delayed">Minified and Concatinated JS (concat/uglify)</li>
+				<li class="delayed">Smallest Site asset images as possible (imagemin)</li>
+			</ul>
+		</ul>
+	</section>
+
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Grunt</h1>
+		<span class="subtitle">All the Plugins</span>
+	</header>
+	
+	<section class="slide">
+		<h2>grunt-uncss</h2>
+		<p>Remove unused CSS across your project</p>
+	</section>
+
+	<section class="slide">
+		<h2>grunt-responsive-images</h2>
+		<p>Create multi-resolution images from a directory</p>
+	</section>
+
+	<section class="slide">
+		<h2>grunt-contrib-jshint</h2>
+		<p>Lint JS files</p>
+	</section>
+
+	<section class="slide">
+		<h2>grunt-sftp-deploy</h2>
+		<p>Deploy with Grunt!</p>
+	</section>
+
+	<section class="slide no-flex">
+		<h2>load-grunt-tasks</h2>
+		<p>Automatically register tasks</p>
+		<img src="img/load.png" alt="">
+		<img src="img/better.png" alt="">
+	</section>
+
+	<section class="slide no-flex">
+		<h2>Roll your own!</h2>
+		<p>It's a good intro to node</p>
+	</section>
+
 </section>
 
 
 <footer class="slide no-flex">
 	<h2>Thank you!</h2>
-	<p>Closing remarks</p>
+	<p>Questions?</p>
 </footer>
 
 <script src="slideshow.js"></script>
